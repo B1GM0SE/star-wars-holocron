@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holocron Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-title">
+            <img src="images/holocron.png" alt="Sith holocron">
+
+            <div>
+                <h1>STAR WARS HOLOCRON</h1>
+                <p>
+                <p>Personal Galactic Profile of the Galaxy Far, Far Away</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="planets.html">Planets</a>
+        <a href="quiz.html">Holocron Profile</a>
+    </nav>
+
+    <main>
+        <h2 class="page-title">Create Your Holocron Profile</h2>
+
+       <p>
+            Create a personal profile by choosing your faction, selecting a favorite
+            character, and explaining what makes that character stand out to you.
+        </p>
+
+        <form class="quiz-form">
+            <div class="form-group">
+                <label for="holocron-name">Holocron name (3-20 Characters):</label>
+
+                <!-- The pattern attribute requires the name to contain only
+                     letters, numbers, and spaces. The maxlength and minlength
+                     attributes control the allowed name length. -->
+                <input
+                    type="text"
+                    id="holocron-name"
+                    name="holocron-name"
+                    pattern="[A-Za-z0-9 ]{3,20}"
+                    minlength="3"
+                    maxlength="20"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="faction">Choose your faction:</label>
+
+                <!-- The option element creates each selectable choice in
+                     the faction dropdown menu. -->
+                <select id="faction" name="faction" required>
+                    <option value="">-- Select a faction --</option>
+                    <option value="jedi">Jedi Order</option>
+                    <option value="sith">Sith Order</option>
+                    <option value="rebel">Rebel Alliance</option>
+                    <option value="empire">Galactic Empire</option>
+                    <option value="independent">Independent</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="favorite-character">Favorite character:</label>
+                <select id="favorite-character" name="favorite-character">
+                    <option value="">-- Select a character --</option>
+                    <option value="luke">Luke Skywalker</option>
+                    <option value="vader">Darth Vader</option>
+                    <option value="leia">Leia Organa</option>
+                    <option value="han">Han Solo</option>
+                    <option value="chewbacca">Chewbacca</option>
+                    <option value="obi-wan">Obi-Wan Kenobi</option>
+                    <option value="mace">Mace Windu</option>
+                    <option value="yoda">Yoda</option>
+                    <option value="anakin">Anakin Skywalker</option>
+                    <option value="ahsoka">Ahsoka Tano</option>
+                    <option value="boba">Boba Fett</option>
+                    <option value="jango">Jango Fett</option>
+                    <option value="sidious">Darth Sidious</option>
+                    <option value="maul">Darth Maul</option>
+                    <option value="dooku">Count Dooku</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="answer">What makes that character stand out to you? (10-300 Characters):</label>
+                <textarea
+                    id="answer"
+                    name="answer"
+                    minlength="10"
+                    maxlength="300"
+                    placeholder="Explain why this character is your favorite..."
+                ></textarea>
+            </div>
+
+            <button type="submit">Complete Profile</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Created by Dustin Moseley | Star Wars Holocron Project</p>
+        <p>Star Wars images are property of Lucasfilm Ltd. and Disney.</p>
+    </footer>
+</body>
+</html>

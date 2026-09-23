@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Holocron</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="site-title">
+            <img src="images/holocron.png" alt="Sith holocron">
+
+            <div>
+                <h1>STAR WARS HOLOCRON</h1>
+                <p>A personal archive of the galaxy far, far away</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="characters.html">Characters</a>
+        <a href="planets.html">Planets</a>
+        <a href="quiz.html">Holocron Profile</a>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h2>Welcome to the Holocron</h2>
+            <p>
+                This website explores some of the most memorable characters,
+                planets, factions, and stories from the Star Wars universe.
+                Use the navigation above to begin your journey.
+            </p>
+        </section>
+
+        <section class="image-preview">
+            <article class="image-card">
+                <img
+                    src="images/luke-skywalker.png"
+                    alt="Luke Skywalker holding a lightsaber"
+                >
+                <h3>Luke Skywalker</h3>
+            </article>
+
+            <article class="image-card">
+                <img
+                    src="images/darth-vader.png"
+                    alt="Darth Vader in his black armor"
+                >
+                <h3>Darth Vader</h3>
+            </article>
+        </section>
+
+        <section class="content-grid">
+            <article class="card">
+                <h3>Characters</h3>
+                <p>
+                    Explore famous Jedi, Sith, heroes, villains, and other
+                    important figures from the Star Wars galaxy.
+                </p>
+                <a href="characters.html">View Characters</a>
+            </article>
+
+            <article class="card">
+                <h3>Planets</h3>
+                <p>
+                    Visit iconic locations such as Tatooine, Coruscant,
+                    Hoth, and other important worlds.
+                </p>
+                <a href="planets.html">Explore Planets</a>
+            </article>
+
+            <article class="card">
+                <h3>Holocron Knowledge</h3>
+                <p>
+                    This holocron is currently filled with information about
+                    the galaxy.
+                </p>
+
+                <!-- The meter element displays a value within a known range.
+                     It represents how complete this personal Star Wars archive is. -->
+                <label for="archive-progress">Archive progress:</label>
+                <meter id="archive-progress" min="0" max="100" value="35">
+                    35%
+                </meter>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Dustin Moseley | Star Wars Holocron Project</p>
+        <p>Star Wars images are property of Lucasfilm Ltd. and Disney.</p>
+    </footer>
+</body>
+</html>

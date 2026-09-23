@@ -1,0 +1,328 @@
+/* Main page styling for the Star Wars Holocron website */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #080d18;
+    background-image:
+        radial-gradient(circle at 15% 20%, rgba(85, 200, 232, 0.35) 0 2px, transparent 3px),
+        radial-gradient(circle at 80% 15%, rgba(245, 197, 66, 0.3) 0 2px, transparent 3px),
+        radial-gradient(circle at 60% 70%, rgba(85, 200, 232, 0.25) 0 2px, transparent 3px),
+        radial-gradient(circle at 35% 90%, rgba(255, 255, 255, 0.25) 0 1px, transparent 2px);
+    background-size: 220px 220px, 280px 280px, 190px 190px, 150px 150px;
+    background-attachment: fixed;
+    color: #e6edf5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #111d32;
+    border-bottom: 2px solid #55c8e8;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #f5c542;
+    font-size: 42px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #9edff0;
+    font-size: 17px;
+}
+
+nav {
+    background-color: #0d1525;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f5c542;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 25px;
+}
+
+.hero {
+    background-color: rgba(20, 36, 59, 0.9);
+    border: 1px solid #55c8e8;
+    border-radius: 8px;
+    box-shadow: 0 0 18px rgba(85, 200, 232, 0.35);
+    padding: 55px 35px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #55c8e8;
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(85, 200, 232, 0.8);
+}
+
+.hero p {
+    color: #e6edf5;
+    font-size: 18px;
+    max-width: 750px;
+    margin: auto;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #111d32;
+    border-left: 4px solid #f5c542;
+    border-radius: 6px;
+    padding: 22px;
+}
+
+.card h3 {
+    color: #f5c542;
+}
+
+.card a {
+    color: #55c8e8;
+}
+
+meter {
+    width: 100%;
+    height: 25px;
+}
+
+footer {
+    background-color: #111d32;
+    border-top: 1px solid #55c8e8;
+    color: #9edff0;
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.page-title {
+    color: #55c8e8;
+    text-align: center;
+    font-size: 32px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    background-color: #111d32;
+}
+
+caption {
+    color: #f5c542;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+th,
+td {
+    border: 1px solid #55c8e8;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1b3452;
+    color: #f5c542;
+}
+
+tr:nth-child(even) {
+    background-color: #162842;
+}
+.planet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.planet-card {
+    background-color: #111d32;
+    border: 1px solid #55c8e8;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.planet-card h3 {
+    color: #f5c542;
+    font-size: 24px;
+}
+
+.planet-card p {
+    color: #d7e4ed;
+}
+.quiz-form {
+    background-color: #111d32;
+    border: 1px solid #55c8e8;
+    border-radius: 8px;
+    margin: 25px auto;
+    max-width: 700px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    color: #f5c542;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background-color: #080d18;
+    border: 1px solid #55c8e8;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background-color: #f5c542;
+    border: none;
+    border-radius: 4px;
+    color: #080d18;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 25px;
+}
+
+button:hover {
+    background-color: #55c8e8;
+}
+.image-preview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.image-card {
+    background-color: rgba(17, 29, 50, 0.9);
+    border: 1px solid #55c8e8;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.image-card img {
+    display: block;
+    height: 280px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.image-card h3 {
+    color: #f5c542;
+    padding: 10px;
+}
+.planet-card img {
+    border-radius: 5px;
+    display: block;
+    height: 190px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    width: 100%;
+}
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.character-card {
+    background-color: rgba(17, 29, 50, 0.92);
+    border: 1px solid #55c8e8;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.character-card img {
+    display: block;
+    height: 220px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.character-card h3 {
+    color: #f5c542;
+    font-size: 17px;
+    margin: 14px 5px;
+}
+.site-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-title img {
+    filter: drop-shadow(0 0 12px rgba(85, 200, 232, 0.9));
+    height: 130px;
+    object-fit: contain;
+    width: 130px;
+}
+.quiz-question {
+    border: 1px solid #55c8e8;
+    border-radius: 6px;
+    margin-bottom: 22px;
+    padding: 18px;
+}
+
+.quiz-question legend {
+    color: #f5c542;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+.quiz-question label {
+    color: #e6edf5;
+    display: block;
+    margin: 8px 0;
+}
+
+.quiz-question input {
+    margin-right: 8px;
+    width: auto;
+}
